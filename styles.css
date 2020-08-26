@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+:root{
+    --color-grey: #e5e5e5;
+    --color-grey-dark: #e5e5e5d2;
+    --color-bg: #f9f9f9;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: rgb(3, 3, 3);
+
+}
+h4{
+    font-size: 14px;
+    margin-left: 15px;
+    color: rgb(96, 96, 96);
+}
+
+hr{
+    background-color:var(--color-grey);
+    border: none;
+    height: 1px;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    width: 100%;
+}
+
+.material-icons{
+    color: rgb(96, 96, 96);
+}
+
+.menuBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 15px;
+}
+
+.menuBar .logo{
+    display: flex;
+    align-items: center;
+}
+
+.menuBar .logo img{
+    width: 100px;
+    margin-left: 15px;
+}
+
+.menuBar i{
+    padding: 0 7px;
+}
+
+.menuBar .search form{
+    border: 1px solid #ddd;
+    height: 35px;
+    margin: 0;
+    padding: 0;
+}
+.menuBar .search input{
+    width: 500px;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    border: none;
+    height: 50%;
+}
+
+.menuBar .search button{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    border: none;
+    border-radius: 0;
+}
+
+.mainBody{
+    height: calc(100vh - 70px);
+    display: flex;
+    overflow: hidden;
+}
+
+.mainBody .categories{
+    width: 230px;
+   background-color: white;
+   overflow-y: scroll;
+}
+
+.mainBody .categories .categoriesSection{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    margin-top: 15px;
+
+}
+
+.mainBody .categories .categoriesSection .category{
+    display: flex;
+    align-items: center;
+    padding: 12px 25px;
+}
+
+.mainBody .categories .categoriesSection .category .active{
+    color: red;
+}
+
+
+.mainBody .categories .categoriesSection .category span{
+    margin-left: 15px;
+}
+
+.active-span{
+    background: var(--color-grey-dark);
+}
+
+.mainBody .categories .categoriesSection .category:hover{
+    background-color: var(--color-grey); 
+    cursor: pointer;
+}
+
+.row {
+    display: flex;
+    background-color: whitesmoke;
+}
+  
+.column {
+    flex: 33.33%;
+    padding-right: 70px;
+}
+
+
+.row .column h3{
+    display: flex;
+    font-size: 15px;
+}
+
+.column img{
+    float: left;
+    display: flex;
+    position: relative;
+    border-radius: 50%;
+    align-content: left;
+    margin-left: 15px;
+}
+
+@media screen and (max-width: 500px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+  
