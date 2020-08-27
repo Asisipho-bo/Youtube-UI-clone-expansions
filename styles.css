@@ -132,35 +132,35 @@ header{
     cursor: pointer;
 }
 
-.row {
-    display: flex;
-    background-color: whitesmoke;
-}
-  
-.column {
-    flex: 33.33%;
-    padding-right: 70px;
+header{
+    background: whitesmoke;
+    height: 119px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
-
-.row .column h3{
-    display: flex;
-    font-size: 15px;
-}
-
-.column img{
-    float: left;
-    display: flex;
-    position: relative;
+.header-img img{
     border-radius: 50%;
-    align-content: left;
-    margin-left: 15px;
+    padding-right: 8px;
+    padding-left: 15px;
 }
 
-@media screen and (max-width: 500px) {
-    .column {
-      width: 100%;
-    }
-  }
+.mainContent{
+    width: fit-content;
+    height: auto;
+    background-color: #f9f9f9;
+}
 
-  
+.videos{
+    height: 100%;
+    width: 100%;
+    padding: 15px 25px;
+    border-top: 1px solid #ddd ;
+    overflow-y: scroll;
+}
+
+.video .thumbnail img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
