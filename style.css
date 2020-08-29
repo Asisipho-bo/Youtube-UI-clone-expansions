@@ -26,7 +26,6 @@ h4{
     color: rgb(96, 96, 96);
 }
 
-
 hr{
     background-color:var(--color-grey);
     border: none;
@@ -37,11 +36,9 @@ body{
 }
 
 
-
 .material-icons{
     color: rgb(96, 96, 96);
 }
-
 .menuBar{
     display: flex;
     justify-content: space-between;
@@ -87,8 +84,6 @@ body{
     border-radius: 0;
 }
 
-
-
 .mainBody{
     height: calc(100vh - 70px);
     display: flex;
@@ -106,6 +101,7 @@ body{
     flex-direction: column;
     margin-bottom: 15px;
     margin-top: 15px;
+
 }
 
 .mainBody .categories .categoriesSection .category{
@@ -132,86 +128,67 @@ body{
     cursor: pointer;
 }
 
-
-.mainContent{
-    background: #f9f9f9;
+.videos{
+    background-color: #f9f9f9;;
+    height: 100%;
     width: 100%;
+    padding: 15px 25px;
+    border-top: 1px solid #ddd ;
     overflow-y: scroll;
-    align-items: center;
 }
 
 
-.mainContent .header-img img{
+.videos .videosGrid{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.videos .videosGrid .video{
+    width: calc(25% - 10px);
+    margin-right: 10px;
+    margin-bottom: 20px; 
+}
+
+.videos .videosGrid .video .thumbnail{
+    width: 100%;
+    height:170px ;
+}
+
+.videos .videosGrid .video .thumbnail img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+
+.author img{ 
+    object-fit: cover;
     border-radius: 50%;
-    padding: 10px 15px;
-    margin-right: 40px;
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
 }
 
-
-.mainContent .videosContainer{
+.details{
     display: flex;
+    margin-top: 10px;
 }
 
-.mainContent .videosContainer .video .thumbnail img{
-    width: 350px;
-    height: auto;
-    padding: 30px;
-}
-
-
-.mainContent .videosContainer .video .thumbnail h4{
-    color: rgb(46, 41, 41);
-    font-weight: normal;
-}
-
-.mainContent .videosContainer .video .thumbnail h6{
-    color: rgb(78, 72, 72);
-    font-weight: lighter;
-}
-
-
-.videosContainer .video .thumbnail p{
-    vertical-align: text-top;
-}
-
-
-
-.videosPage .openVideo .thumbnail img{
-    width:100%;
-    height: auto;
-    padding: 40px;
-}
-
-.videosPage .openVideo .thumbnail h2,h6{
-    color: rgb(65, 61, 61);
-}
-
-.videosPage .openVideo .thumbnail i{
-    size: 10px;
-    align-content: right;
-    color: rgb(65, 61, 61);
-}
-
-.videosPage .openVideo .thumbnail h2,h6, p, i{
-    padding-left: 40px;
-    color: rgb(46, 38, 38);
-}
-
-.videosPage{
+.details .title{
     display: flex;
-    margin: 5px;
+    flex-direction: column;
+
 }
 
+.details .title h3{
+    color: rgb(3, 3, 3);
+    font-size: 14px;
 
-.Upnext .video .thumbnail h4{
-    color: rgb(65, 61, 61);
-    padding-bottom: 10px;
 }
 
-.Upnext .video .thumbnail img{
-    width: 200px;
-   float: left;
-   font-weight: lighter;
-   padding-bottom: 20px;
-   padding-right: 5px;
+.details .title a, span{
+    text-decoration: none;
+    color: rgb(96, 96, 96);
+    font-size: 14px;
 }
